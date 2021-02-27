@@ -10,14 +10,18 @@ public class FireCommand implements Command{
      * @param robot A Robot for robot
      */
     public FireCommand(Robot robot){
+
         this.robot = robot;
+        
     }
 
     /**
-     * Executes the pickup command
+     * Executes the fire command
      */
     public void execute(){
-        robot.pickup();
+
+        robot.fire();
+
     }
 
 
