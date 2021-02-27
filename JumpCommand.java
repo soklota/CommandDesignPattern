@@ -10,18 +10,13 @@ public class JumpCommand implements Command{
      * @param robot A Robot for the robot
      */
     public JumpCommand(Robot robot){
-
         this.robot = robot;
-
     }
 
     /**
      * Executes the jump command
      */
     public void execute(){
-
         robot.jump();
-
     }
-    
 }

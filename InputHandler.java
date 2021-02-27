@@ -9,7 +9,6 @@ import java.util.HashMap;
  * @author Overachievers
  */
 public class InputHandler {
-
     private HashMap<String, Command> commands;
 
     /**
@@ -22,7 +21,6 @@ public class InputHandler {
      * class.
      */
     public InputHandler(Robot robot){
-
         commands = new HashMap<String, Command>();
         commands.put("heal", new HealCommand(robot));
         commands.put("fire", new FireCommand(robot));
@@ -41,7 +39,5 @@ public class InputHandler {
         if (commands.containsKey(data)) {
             commands.get(data).execute();
         }
-    }
-    
-    
+    }  
 }
