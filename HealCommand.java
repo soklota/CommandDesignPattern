@@ -1,4 +1,4 @@
-public class HealCommand extends Robot{
+public class HealCommand implements Command{
 
     public HealCommand(Robot robot){
 
@@ -10,5 +10,5 @@ public class HealCommand extends Robot{
 
     }
 
-    
+
 }
