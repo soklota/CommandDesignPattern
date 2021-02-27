@@ -24,5 +24,4 @@ public class HealCommand implements Command{
 
     }
 
-
 }
