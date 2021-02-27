@@ -7,12 +7,12 @@ public class FireCommand implements Command{
 
     /**
      * Constructor to set given robot to local robot
-     * @param robot A Robot for robot
+     * @param robot A Robot for the robot
      */
     public FireCommand(Robot robot){
 
         this.robot = robot;
-        
+
     }
 
     /**

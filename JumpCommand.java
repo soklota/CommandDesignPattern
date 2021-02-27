@@ -7,7 +7,7 @@ public class JumpCommand implements Command{
 
     /**
      * Constructor for jump command setting given to local robot 
-     * @param robot
+     * @param robot A Robot for the robot
      */
     public JumpCommand(Robot robot){
 
