@@ -11,7 +11,7 @@ public class InputHandler {
     }
 
     public void inputEntered(String data){
-        if (data.equalsIgnoreCase("heal") && commands.containsKey(data)) {
+        if (commands.containsKey(data)) {
             commands.get(data).execute();
         }
     }
