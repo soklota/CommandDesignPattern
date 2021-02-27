@@ -1,5 +1,4 @@
-import java.util.*;
-import java.util.Map.*;
+import java.util.HashMap;
 
 public class InputHandler {
 
@@ -7,16 +6,14 @@ public class InputHandler {
 
     public InputHandler(Robot robot){
 
-        HashMap <String, Command> commands = new HashMap<String, Command>();
-        commands.put("pickup", PickupCommand);
-        commands.put("jump", JumpCommand);
-        commands.put("fire", FireCommand);
-        commands.put("heal", HealCommand);
+        commands = new HashMap<String, Command>();
 
     }
 
     public void inputEntered(String data){
-
+        if (data.equalsIgnoreCase("heal") && commands.containsKey(data)) {
+            commands.get(data).execute();
+        }
     }
     
     
