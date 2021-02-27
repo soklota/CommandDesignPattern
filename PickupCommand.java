@@ -1,5 +1,5 @@
 /**
- * Pickup command class implementing Command
+ * Pickup command class implementing Command class
  * @author Overachievers
  */
 public class PickupCommand implements Command{
